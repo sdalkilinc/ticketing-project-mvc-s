@@ -14,17 +14,11 @@ public abstract class AbstractMapService <T,ID>{
         return object;
     }
 
-    List<T> findAll(){
-        return new ArrayList<>(map.values());
-    }
+    List<T> findAll(){ return new ArrayList<>(map.values());}
 
-    T findById(ID id){
-        return map.get(id);
-    }
+    T findById(ID id){ return map.get(id); }
 
-    void deleteById(ID id){
-        map.remove(id);
-    }
+    void deleteById(ID id){ map.remove(id); }
 
 
 
